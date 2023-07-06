@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+      .gradient-custom {
+  background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .footer {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer img {
+      width: 30px;
+      margin: 0 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .footer img:hover {
+      transform: translateY(-5px);
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            TO-DO CG
+        </a>
+    </nav>
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col col-xl-10">
+    
+            <div class="card">
+              <div class="card-body p-5">
+    
+                <form class="d-flex justify-content-center align-items-center mb-4">
+                  <div class="form-outline flex-fill">
+                    <input type="text" id="form2" class="form-control" />
+                    <label class="form-label" for="form2">New task...</label>
+                  </div>
+                  <button type="submit" class="btn btn-info ms-2">Add</button>
+                </form>
+    
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-4 pb-2" id="ex1" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab"
+                      aria-controls="ex1-tabs-1" aria-selected="true">All</a>
+                  </li>
+                  
+                  
+                </ul>
+                <!-- Tabs navs -->
+    
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex1-content">
+                  <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+                    aria-labelledby="ex1-tab-1">
+                    <ul class="list-group mb-0">
+                      <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                        <s>Cras justo odio</s>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                        <s>Dapibus ac facilisis in</s>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Morbi leo risus
+                      </li>
+                      <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Porta ac consectetur ac
+                      </li>
+                      <li class="list-group-item d-flex align-items-center border-0 mb-0 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Vestibulum at eros
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                    <ul class="list-group mb-0">
+                      <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Morbi leo risus
+                      </li>
+                      <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Porta ac consectetur ac
+                      </li>
+                      <li class="list-group-item d-flex align-items-center border-0 mb-0 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Vestibulum at eros
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                    <ul class="list-group mb-0">
+                      <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                        <s>Cras justo odio</s>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                        <s>Dapibus ac facilisis in</s>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Tabs content -->
+    
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="google.webp" alt="LinkedIn"></a>
+    </div>
+
+    <script>
+      // Get the necessary elements
+      const form = document.querySelector('form');
+      const taskInput = document.getElementById('form2');
+      const allTab = document.getElementById('ex1-tab-1');
+      const activeTab = document.getElementById('ex1-tab-2');
+      const completedTab = document.getElementById('ex1-tab-3');
+      const allTasks = document.getElementById('ex1-tabs-1');
+      const activeTasks = document.getElementById('ex1-tabs-2');
+      const completedTasks = document.getElementById('ex1-tabs-3');
+
+      // Task list
+      const tasks = [];
+
+      // Function to add a new task
+      function addTask(event) {
+        event.preventDefault(); // Prevent form submission
+
+        const taskText = taskInput.value.trim(); // Get the task text
+
+        if (taskText !== '') {
+          tasks.push({
+            text: taskText,
+            completed: false
+          });
+          renderTasks();
+          taskInput.value = ''; // Clear the input field
+        }
+      }
+
+      // Function to toggle the completed status of a task
+      function toggleTask(index) {
+        tasks[index].completed = !tasks[index].completed;
+        renderTasks();
+      }
+
+      // Function to render the task list
+      function renderTasks() {
+        // Clear the task list
+        allTasks.innerHTML = '';
+        activeTasks.innerHTML = '';
+        completedTasks.innerHTML = '';
+
+        tasks.forEach((task, index) => {
+          const listItem = document.createElement('li');
+          listItem.classList.add('list-group-item', 'd-flex', 'align-items-center', 'border-0', 'mb-2', 'rounded');
+          listItem.style.backgroundColor = '#f4f6f7';
+
+          const checkbox = document.createElement('input');
+          checkbox.classList.add('form-check-input', 'me-2');
+          checkbox.type = 'checkbox';
+          checkbox.value = '';
+          checkbox.setAttribute('aria-label', '...');
+
+          checkbox.checked = task.completed;
+          checkbox.addEventListener('change', () => toggleTask(index));
+
+          const label = document.createElement('label');
+          label.classList.add('form-check-label');
+          label.style.textDecoration = task.completed ? 'line-through' : 'none';
+          label.innerText = task.text;
+
+          listItem.appendChild(checkbox);
+          listItem.appendChild(label);
+
+          if (task.completed) {
+            completedTasks.appendChild(listItem);
+          } else {
+            allTasks.appendChild(listItem);
+            activeTasks.appendChild(listItem.cloneNode(true));
+          }
+        });
+      }
+
+      // Add event listener to the form submission
+      form.addEventListener('submit', addTask);
+
+      // Set the initial tab and render the task list
+      allTab.classList.add('active');
+      renderTasks();
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</html>
